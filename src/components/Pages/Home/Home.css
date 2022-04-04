@@ -1,0 +1,57 @@
+.Home__Nav {
+  border-right: solid 0.1rem #6eb633;
+  height: 100vh;
+  position: relative;
+}
+
+.Home__Nav__Header {
+  background: url(../../../images/logo.png) no-repeat 1rem center/18rem;
+  height: 6rem;
+}
+
+.Home__Nav__FakeBorder {
+  background: linear-gradient(to left, #6eb633 0%, #0986af 100%);
+  height: 0.4rem;
+}
+
+.Home__Nav__Footer {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.Home__Content__Selectfile {
+  padding: 6rem;
+  background: url(../../../images/Wts-box.jpeg) no-repeat center/cover;
+  border-radius: 6px;
+  margin-top: 6rem;
+  position: relative;
+}
+
+.Home__Content__Selectfile h3 {
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  color: #0a3677;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #35e0fc;
+  padding: 12px 15px;
+  position: absolute;
+  top: 0;
+  left: 45px;
+}
+
+.Home__Content__Error {
+  color: #fff;
+}
+
+.Home__Content__Back {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.Home__Content__Back:hover {
+  cursor: pointer;
+  color: #0a3677;
+}

@@ -1,0 +1,8 @@
+.Footer__copy {
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(to left, #6eb633 0%, #0986af 100%);
+  color: #fff;
+  padding: 2rem 4rem;
+  text-align: right;
+}

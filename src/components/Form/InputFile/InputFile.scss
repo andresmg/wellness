@@ -1,0 +1,36 @@
+@import '../../../stylesheets/variables';
+
+input {
+  overflow: hidden;
+}
+
+.custom-file-input {
+  display: block;
+  background: $wellness-white;
+  font-size: 1.6rem;
+  border: solid 0.1rem $wellness-text;
+  height: 4.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+
+  &::-webkit-file-upload-button {
+    display: none;
+  }
+
+  &:before {
+    content: 'Select file';
+    display: inline-flex;
+    align-content: center;
+    padding: 0 2rem;
+    padding-top: 0.6rem;
+    background: $wellness-darkblue;
+    border: 0;
+    height: 5.5rem;
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+    color: $wellness-white;
+    margin-right: 1rem;
+    padding-top: 1rem;
+  }
+}

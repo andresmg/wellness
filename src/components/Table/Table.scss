@@ -1,0 +1,48 @@
+@import '../../stylesheets/variables';
+
+.Table {
+  position: relative;
+  &__Header {
+    background: $wellness-green;
+    color: $wellness-white;
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 0 0 0.6rem 0.6rem;
+    margin-top: -1rem;
+  }
+
+  &__Wrapper {
+    height: 70vh;
+    overflow: scroll;
+  }
+
+  &__Rows {
+    position: relative;
+
+    &:hover {
+      background: rgba($wellness-lightblue, 0.3);
+      cursor: pointer;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      background: url(../../images/edit.svg) no-repeat 1rem center / contain;
+      width: 4rem;
+      height: 3rem;
+      display: block;
+      left: 0rem;
+      top: 0.4rem;
+    }
+    .col {
+      padding: 1rem;
+      border-bottom: solid 0.1rem rgba($wellness-text, 0.1);
+      font-size: 1.2rem;
+    }
+
+    &__Date {
+      padding-left: 5rem !important;
+    }
+  }
+}

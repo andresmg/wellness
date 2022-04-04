@@ -1,0 +1,46 @@
+.form-group {
+  margin-top: 2rem;
+}
+
+.form-group .label {
+  text-transform: none;
+  margin-bottom: 1rem;
+  color: #737b7f;
+  font-size: 1.4rem;
+}
+
+.form-group .form-control {
+  background: #fff;
+  font-size: 1.8rem;
+  border: solid 0.1rem #737b7f;
+  height: 6rem;
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+}
+
+.form-group .form-control:disabled {
+  background: #f5f5f5;
+  opacity: 0.3 !important;
+}
+
+.invalid-feedback {
+  color: #cd202f;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+@media (max-width: 576px) {
+  .form-group {
+    margin-top: 1rem;
+  }
+}

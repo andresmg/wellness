@@ -1,0 +1,68 @@
+@import '../../../stylesheets/variables';
+
+.Home {
+  &__Nav {
+    border-right: solid 0.1rem $wellness-green;
+    height: 100vh;
+    position: relative;
+
+    &__Header {
+      background: url(../../../images/logo.png) no-repeat 1rem center / 18rem;
+      height: 6rem;
+    }
+
+    &__FakeBorder {
+      background: linear-gradient(
+        to left,
+        $wellness-green 0%,
+        $wellness-blue 100%
+      );
+      height: 0.4rem;
+    }
+
+    &__Footer {
+      position: absolute;
+      bottom: 0;
+      padding: 1rem;
+    }
+  }
+
+  &__Content {
+
+    &__Selectfile {
+      padding: 6rem;
+      background: url(../../../images/Wts-box.jpeg) no-repeat center / cover;
+      border-radius: 6px;
+      margin-top: 6rem;
+      position: relative;
+
+      h3 {
+        font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+        color: $wellness-darkblue;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background: $wellness-lightblue;
+        padding: 12px 15px;
+        position: absolute;
+        top: 0;
+        left: 45px;
+      }
+    }
+
+    &__Error {
+      color: $wellness-white;
+    }
+
+    &__Back {
+      color: $wellness-white;
+      font-size: 1.8rem;
+      font-weight: 700;
+
+      &:hover {
+        cursor: pointer;
+        color: $wellness-darkblue;
+      }
+    }
+  }
+}

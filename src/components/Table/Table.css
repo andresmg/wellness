@@ -1,0 +1,48 @@
+.Table {
+  position: relative;
+}
+
+.Table__Header {
+  background: #6eb633;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: 0 0 0.6rem 0.6rem;
+  margin-top: -1rem;
+}
+
+.Table__Wrapper {
+  height: 70vh;
+  overflow: scroll;
+}
+
+.Table__Rows {
+  position: relative;
+}
+
+.Table__Rows:hover {
+  background: rgba(53, 224, 252, 0.3);
+  cursor: pointer;
+}
+
+.Table__Rows:after {
+  content: '';
+  position: absolute;
+  background: url(../../images/edit.svg) no-repeat 1rem center/contain;
+  width: 4rem;
+  height: 3rem;
+  display: block;
+  left: 0rem;
+  top: 0.4rem;
+}
+
+.Table__Rows .col {
+  padding: 1rem;
+  border-bottom: solid 0.1rem rgba(51, 51, 51, 0.1);
+  font-size: 1.2rem;
+}
+
+.Table__Rows__Date {
+  padding-left: 5rem !important;
+}

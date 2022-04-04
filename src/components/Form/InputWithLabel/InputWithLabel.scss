@@ -1,0 +1,50 @@
+@import '../../../stylesheets/variables';
+
+.form-group {
+  margin-top: 2rem;
+
+  .label {
+    text-transform: none;
+    margin-bottom: 1rem;
+    color: $wellness-nav;
+    font-size: 1.4rem;
+  }
+
+  .form-control {
+    background: $wellness-white;
+    font-size: 1.8rem;
+    border: solid 0.1rem $wellness-nav;
+    height: 6rem;
+    margin-bottom: 2rem;
+    padding-left: 2rem;
+
+    &:disabled {
+      background: $wellness-back;
+      opacity: 0.3 !important;
+    }
+  }
+}
+
+.invalid-feedback {
+  color: $wellness-red;
+  font-size: 1.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+//cambia el color del input autocomplete
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  box-shadow: 0 0 0 30px white inset !important;
+}
+
+@media (max-width: 576px) {
+  .form-group {
+    margin-top: 1rem;
+  }
+}

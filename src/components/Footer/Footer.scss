@@ -1,0 +1,12 @@
+@import '../../stylesheets/variables.scss';
+
+.Footer {
+  &__copy {
+    position: fixed;
+    bottom: 0;
+    background: linear-gradient(to left, $wellness-green 0%, $wellness-blue 100%);
+    color: $wellness-white;
+    padding: 2rem 4rem;
+    text-align: right;
+  }
+}

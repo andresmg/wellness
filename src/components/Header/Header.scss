@@ -1,0 +1,7 @@
+@import '../../stylesheets/variables';
+
+.Header {
+  background: url(../../images/logo.png) no-repeat 2rem center / 22rem;
+  height: 6rem;
+  border-bottom: solid 0.1rem $wellness-blue;
+}
