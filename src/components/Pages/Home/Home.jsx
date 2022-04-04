@@ -57,7 +57,6 @@ function Home() {
         try {
             await dataUpload(data)
             const getAllData = await getData()
-            console.log(getAllData.length)
             setCsvData(getAllData)
         } catch (err) {
             setMessage(err.response?.data?.message)

@@ -48,13 +48,10 @@ function EditElementsModal({deleteItem, element, hideModal}) {
 
     const editCarrouselItem = async () => {
 
-        console.log(data)
-
         if (Object.values(error).map(el => el).includes(false)) {
             try {
                 await updateRow(data)
                     .then(updateData => {
-                        console.log(updateData)
                         deleteItem(updateData)
                     })
             } catch (err) {
